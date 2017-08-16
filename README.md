@@ -1,4 +1,4 @@
-[homepage]: http://blue-hoopoe.com
+[homepage]: http://blue-hoopoe.com/qi-js
 
 # [qi.js][homepage]
 
