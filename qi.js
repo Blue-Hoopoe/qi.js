@@ -5,15 +5,15 @@ function Qi(queries) {
     this.queries = queries ? queries : { small: 0, medium: 640, large: 1024 };
     this.breakpoints = [];
 
-    /* Creating collection of tags that correspond with given settings. */
-    (function () {
+    /* Function that creates collection of tags that correspond with given settings. */
+    this.registerElements = function(){
         var query = "";
         for (var q in self.queries) {
             query += "[qi-" + q + "],";
             self.breakpoints.push(q);
         }
         self.registered = document.querySelectorAll(query.slice(0, -1));
-    })();
+    }
 
     /* Function that returns query notation valid with given configuration. */
     this.getQuery = function () {
@@ -50,6 +50,7 @@ function Qi(queries) {
     }
 
     /* Reviving functionality. */
+    this.registerElements();
     this.resize();
     if (window.addEventListener) {
         window.addEventListener('resize', self.resize, false);
