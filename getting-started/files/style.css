@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400&subset=latin-ext');
+
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 1.055rem;
+}
+
+html, body {
+    color: #646464;
+}
+
+a:active, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a {
+    color: #5ba0e7;
+    transition: color 0.15s;
+}
+
+    a:hover {
+        color: #3f84cb;
+    }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0.3rem 0;
+    border-bottom: 1px solid #5ba0e7;
+}
+
+h1, .h1 {
+    font-size: 1.825rem;
+    margin: 0 0 1rem 0;
+}
+
+h2, .h2 {
+    font-size: 1.625rem;
+    margin: 0 0 0.8rem 0;
+}
+
+h3, .h3 {
+    font-size: 1.525rem;
+    margin: 0 0 0.5rem 0;
+}
+
+h4, .h4, h5, .h5, h6, .h6 {
+    font-size: 1.25rem;
+    margin: 0 0 0.3rem 0;
+}
+
+p, li {
+    margin: 0 0 0.5rem 0;
+}
+
+.row, .columns {
+    position: relative;
+}
+
+body > section, body > header, body > footer {
+    padding: 1.5rem 0;
+}
+
+    body > header h1, body > header h2, body > header .fancy-button, body > footer {
+        font-weight: 300;
+    }
+
+body > footer {
+    margin-top: 5rem;
+}
+
+    body > footer a {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+        body > footer a:active, body > footer a:focus, body > footer a:hover {
+            color: #ffffff;
+        }
+
+.gradient {
+    color: #fff;
+    background: #5ba0e7;
+    background: -moz-linear-gradient(left, #5ba0e7 0%, #45baf6 100%);
+    background: -webkit-linear-gradient(left, #5ba0e7 0%,#45baf6 100%);
+    background: linear-gradient(to right, #5ba0e7 0%,#45baf6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ba0e7', endColorstr='#45baf6',GradientType=1 );
+}
+
+.no-border {
+    border: none;
+}
+
+.logotype {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: default;
+    justify-content: center;
+}
+
+    .logotype img {
+        height: 1.3em;
+        margin-right: 0.25em;
+    }
+
+.fancy-button, .fancy-button:after {
+    padding: 0.35em 0.5em;
+    margin: 0.3em;
+    border-radius: 0.25rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: all 0.15s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+    .fancy-button > .material-icons {
+        font-size: 1em;
+        margin-right: 0.35em;
+        margin-top: 0.05em;
+    }
+
+    .fancy-button:hover, .fancy-button.active {
+        background-color: #fff;
+        color: #5ba0e7;
+    }
+
+    main .fancy-button{
+        background-color: #4faff0;
+        border-color: #4faff0;
+        color: #fff;
+    }
+    
+    main .fancy-button:hover,
+    main .fancy-button.active{
+        color: #4faff0;
+    }
+    
+.spacer-bottom {
+    margin-bottom: 1rem;
+}
+
+.spacer-top {
+    margin-top: 1rem;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+.page-section > header {
+    margin-bottom: 0;
+}
+
+
+/* Operating System Window */
+.os-window {
+    margin: auto;
+}
+
+    .os-window > .header {
+        height: 1.2rem;
+        border-radius: 0.4rem 0.4rem 0 0;
+        overflow: hidden;
+    }
+
+        .os-window > .header > .dot {
+            border-radius: 50%;
+            opacity: 0.4;
+            height: 0.6rem;
+            width: 0.6rem;
+            background-color: #fff;
+            float: left;
+            margin-top: 0.3rem;
+            margin-left: 0.3rem;
+        }
+
+    .os-window > .content {
+        border-radius: 0 0 0.4rem 0.4rem;
+        padding: 0.75rem;
+        border: 1px solid #5ba0e7;
+        border-top: none;
+    }
+
+/* End Operating System Window */
+
+.columns {
+    margin-top: 1rem;
+}
+
+code {
+    margin: 0;
+    padding: 0;
+    background-color: initial;
+    border: none;
+    font-size: 0.75rem;
+    display: inline-block;
+    line-height: 1.5;
+    color: #8e8e8e;
+}
+
+.tag {
+    color: #5ba0e7;
+}
+
+.attr {
+    color: #b36bc9;
+}
+
+.attr-val {
+    color: #7bc346;
+}
+
+.js {
+    color: #795548;
+}
+
+.json {
+    color: #1bae83;
+}
+
+.accent{
+    color: #e91e63;
+}
+
+
+.clickable{
+    cursor: pointer;
+}
+
+.unbreakable{
+    white-space: nowrap;
+}
+
+._dev_env{
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

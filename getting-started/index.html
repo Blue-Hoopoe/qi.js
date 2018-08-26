@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://blue-hoopoe.com/qi-js -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="http://blue-hoopoe.com/public/images/logo/logo_256.png">
+        <meta name="robots" content="index,follow">
+        <meta property="og:image" content="/public/images/logo/logo_256.png">
+        <meta property="og:type" content="website">
+
+            <title>qi.js | Blue-Hoopoe</title>
+    <meta name="description" content="Lightweight, backward compatible and simple to use javascript module that allows assigning different image sources depending on window width.">
+        
+            <meta property="og:title" content="qi.js | Blue-Hoopoe">
+    <meta property="og:description" content="Lightweight, backward compatible and simple to use javascript module that allows assigning different image sources depending on window width.">
+    <meta property="og:type" content="website">
+
+        <link rel="stylesheet" href="./files/foundation.min.css">
+        <script async="" src="./files/analytics.js"></script><script src="./files/jquery.js"></script>
+        <script src="./files/foundation.min.js"></script>
+        <link href="./files/icon" rel="stylesheet"> 
+        <link rel="stylesheet" href="./files/style.css">
+        
+    <meta class="foundation-mq"></head>
+    <body>
+
+                
+                <header class="gradient spacer-bottom">
+                <div class="row align-center text-center">
+        <h1 draggable="false" class="columns no-border small-12 logotype spacer-bottom">
+            <img draggable="false" src="./files/logo-transparent.svg">
+            <span>qi.js</span>
+        </h1>
+        <h2 class="h5 no-border columns small-12  spacer-bottom">
+            Manage your image sources directly in html code.
+        </h2>
+        <div class="columns small-12">
+            <a href="http://blue-hoopoe.com/public/files/qi.js.1.0.476f41.zip" class="fancy-button"></i>
+                Download
+            </a>
+            <a href="https://github.com/Blue-Hoopoe/qi.js" class="fancy-button"></i>
+                Github
+            </a>
+        </div>
+    </div>
+        </header>
+        
+
+        <main>
+                                <section class="medium-text-justify page-section" id="introduction">
+        <header class="row">
+            <h3 class="columns h1 small-12">Introduction</h3>
+        </header>
+        <div class="row ">
+            <div class="columns small-12 medium-6">
+                <p>Queried Images is simple in use, lightweight and quite flexible javascript module, that automatically changes image sources in your html code depending on browser's window width.</p>
+                <p class="show-for-medium">It allows you to override default media queries included in module or even create your own breakpoints groups. And the best part is that the whole minified file has only 781 bytes of code!</p>
+                <p>Qi.js can be a nice alternative for hiding  images via css classes and can help you to organize your code on html layer.</p>
+                <p class="show-for-medium">If you have some doubts about how it works, feel free to try out emulation on the right.</p>
+            </div>
+            <div class="columns medium-6 show-for-medium" id="presentation-1">
+                <div class="slider" data-slider="" data-start="50" data-initial-start="100" data-end="100" data-e="s2jiqb-e">
+                    <span class="slider-handle" data-slider-handle="" role="slider" tabindex="0" aria-controls="j9kqw6-slider" aria-valuemax="100" aria-valuemin="50" aria-valuenow="100" aria-orientation="horizontal" style="left: 95.24%;"></span>
+                    <span class="slider-fill" data-slider-fill="" style="width: 100%;"></span>
+                    <input type="hidden" id="j9kqw6-slider" max="100" min="50" step="1" value="100">
+                </div>
+                <div class="os-window spacer-top" style="width: 100%;">
+                    <div class="header gradient">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="content">
+                        <img src="./files/1920x1080.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        <section class="medium-text-justify  page-section" id="basic-usage">
+        <header class="row">
+            <h3 class="columns h1 small-12">Basic usage</h3>
+        </header>
+        <div class="row ">
+            <div class="columns medium-6">
+                <div class="os-window spacer-top">
+                    <div class="header gradient">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="content">
+                        <pre><code>&lt;<span class="tag">html</span>&gt;
+&lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">script</span> <span class="attr">src</span>=<span class="attr-val">"qi.js"</span>&gt;&lt;/<span class="tag">script</span>&gt;
+&lt;/<span class="tag">head</span>&gt;
+&lt;<span class="tag">body</span>&gt;
+    &lt;<span class="tag">img</span> <span class="attr">qi-small</span>  = <span class="attr-val">"http://via.placeholder.com/1366x768" </span>
+         <span class="attr">qi-medium</span> = <span class="attr-val">"http://via.placeholder.com/1600x1900" </span>
+         <span class="attr">qi-large</span>  = <span class="attr-val">"http://via.placeholder.com/1920x1080" </span>/&gt;
+    &lt;<span class="tag">script</span>&gt;
+        <span class="js">new Qi();</span>
+    &lt;/<span class="tag">script</span>&gt;
+&lt;/<span class="tag">body</span>&gt;
+&lt;/<span class="tag">html</span>&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="columns small-12 medium-6">
+                <p>To start using qi.js on basic, there are only three easy steps that you must follow:</p>
+                <ol>
+                    <li>pull downloaded module to your html,</li>
+                    <li>add dynamic qi sources to every &lt;<span class="tag">img</span>&gt; tag that you like,</li>
+                    <li>before closing &lt;/<span class="tag">body</span>&gt; tag initialize <span class="js">new Qi</span> object (or create event that fires after document is loaded).</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+
+
+        <section class="medium-text-justify page-section" id="default-media-queries">
+        <header class="row">
+            <h3 class="columns h1 small-12">Default media queries</h3>
+        </header>
+        <div class="row ">
+            <div class="columns small-12">
+                <p>By default, Qi object has three media breakpoints based on device's width:</p>
+                <ul>
+                    <li><strong>qi-small</strong> - for 0 pixels or more,</li>
+                    <li><strong>qi-medium</strong> - for 640 pixels or more,</li>
+                    <li><strong>qi-large</strong> - for 1024 pixels or more.</li>
+                </ul>
+                <p>The important thing is that larger queries overrides smaller, like it is in a <a href="http://foundation.zurb.com/sites/docs/media-queries.html#default-media-queries" target="_blank">Zurb's Foundation approach</a>.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+        <section class="medium-text-justify page-section" id="custom-and-multiple-breakpoints">
+        <header class="row">
+            <h3 class="columns h1 small-12">Custom and multiple breakpoints</h3>
+        </header>
+        <div class="row ">
+            <div class="columns small-12 medium-6">
+                <p>As mentioned, there is an option to invoke personalized breakpoints or override default one. To do that, just pass JSON object when creating Qi object like shown on the snippet.</p>
+                <p>In the same way you can build your own breakpoints names at your discretion!</p>
+                <p>You can create as many Qi objects as you want, but pay attention to given names. If only one of them is repeated, it can cause unwanted assignments.</p>
+            </div>
+            <div class="columns medium-6">
+                <div class="os-window spacer-top">
+                    <div class="header gradient">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="content">
+                        <pre><code>&lt;-- creating new breakpoints à la Bootstrap --&gt; 
+&lt;<span class="tag">img</span> <span class="attr">qi-xs</span> = <span class="attr-val">"http://via.placeholder.com/100x100" </span>
+     <span class="attr">qi-sm</span> = <span class="attr-val">"http://via.placeholder.com/200x100" </span>
+     <span class="attr">qi-md</span> = <span class="attr-val">"http://via.placeholder.com/300x100" </span>
+     <span class="attr">qi-lg</span> = <span class="attr-val">"http://via.placeholder.com/400x100" </span>/&gt;
+
+&lt;<span class="tag">script</span>&gt;
+    <span class="js">new Qi(<span class="json">{
+        xs: 0,
+        sm: 768,
+        md: 992,
+        lg: 1200
+    }</span>);</span>
+&lt;/<span class="tag">script</span>&gt;</code></pre>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+                    </main>
+
+
+
+                            <footer class="gradient">
+                <div class="row align-middle">
+                    <div class="columns medium-6 small-12">
+                        <img draggable="false" src="./files/logo-transparent.svg" style="height: 3rem;">
+                        <p>Blue Hoopoe</p>
+                    </div>
+                    <div class="columns medium-6 small-12">
+                        <p>Frontend built using:<br>
+                            <a href="https://foundation.zurb.com/">Foundation</a>, 
+                            <a href="https://material.io/icons/">Material Icons</a> and 
+                            <a href="https://jquery.com/">JQuery</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+         
+        
+
+        <script>$(document).foundation();</script>
+                    <script src="./files/qi-js.presentation.js"></script>
+ 
+        
+    
+</body><autoscroll></autoscroll></html>
