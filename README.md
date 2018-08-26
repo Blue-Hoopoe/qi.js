@@ -1,8 +1,6 @@
-[homepage]: http://blue-hoopoe.com/qi-js
+# qi.js
 
-# [qi.js][homepage]
-
-This is the first release of Queried Images - lightweight (minified file has only 861 bytes of code) and simple to use javascript module that allows assigning different image sources depending on window width. To learn more, please [visit official site][homepage] or read documentation below.
+This is the first release of Queried Images - lightweight (minified file has only 861 bytes of code) and simple to use javascript module that allows assigning different image sources depending on window width. To learn more, please visit ```getting-started``` folder or read documentation below.
 
 ## Basic usage
 To start using qi.js there are only three steps that you must follow:
